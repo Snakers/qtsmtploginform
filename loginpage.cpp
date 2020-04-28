@@ -18,20 +18,7 @@ LoginPage::LoginPage(QWidget *parent) :
   auto func=[](int x){
       qDebug()<<"Hello World + "<<x;
     };
-  func(10);
-  // [](){cout<<"Hello World"<<endl;}();
-  int fn=[](int a,int b)->int{
-      return a+b;
-    }(10,33);
 
-  qDebug()<<fn;
-  int a=10;
-  int b =20;
-  [a,b](){
-    qDebug()<<"a is "<<a;
-    qDebug()<<"b is "<<b;
-
-  }();
   mydb = QSqlDatabase::addDatabase("QSQLITE");
   mydb.setDatabaseName("/home/blocker/QtProject/QSqlLoginPage/mydb.db");
   //  QPainter pp(this);
