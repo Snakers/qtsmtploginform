@@ -79,7 +79,8 @@ void SignUpDialog::sendMail()
   ran=std::rand();
   msg ="Welcome To Launcher Application please copy this number and place it : "+QString::number(ran);
   // qDebug()<<msg;
-  smtp->sendMail("0snakers0@gmail.com", ui->email_le->text() , "Launcher Application code : "+QString::number(ran),msg);
+  //your email
+  smtp->sendMail("youremail@gmail.com", ui->email_le->text() , "Launcher Application code : "+QString::number(ran),msg);
 
 }
 
