@@ -1,0 +1,5 @@
+QMessageBox {
+background-color : greenyellow;
+}
+QToolBar {background: red}
+QStatusBar{background-color:purple};
